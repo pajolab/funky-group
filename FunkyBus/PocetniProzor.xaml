@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FunkyBus"
         mc:Ignorable="d"
-        Title="PocetniProzor" Height="450" Width="800">
-    <Grid>
-        
+        Title="FunkyBus - Početni Prozor" Height="450" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFD6A92C">
+        <Button x:Name="btnPrijava" Content="Prijava" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Top" Height="75" FontSize="36" FontFamily="Bahnschrift Light" Background="#FFFFE777" Foreground="Black" Click="btnPrijava_Click"/>
+        <Button x:Name="btnRegistracija" Content="Registracija" HorizontalAlignment="Center" Margin="0,250,0,0" VerticalAlignment="Top" Height="75" FontSize="36" Background="#FFFFE777" FontFamily="Bahnschrift Light" Click="btnRegistracija_Click"/>
+        <Label Content="FunkyBus" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" FontSize="36" FontFamily="Bahnschrift Light"/>
     </Grid>
 </Window>

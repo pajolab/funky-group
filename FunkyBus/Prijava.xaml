@@ -1,0 +1,17 @@
+﻿<Window x:Class="FunkyBus.Prijava"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FunkyBus"
+        mc:Ignorable="d"
+        Title="FunkyBus - Prijava" Height="300" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFD6A92C">
+        <Label Content="Prijava" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift Light Condensed" FontSize="36"/>
+        <TextBox x:Name="txtIme" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="140,90,0,0" TextWrapping="WrapWithOverflow" Text="Ime" Width="120" Height="30" Background="#FFFFE777" FontSize="22"/>
+        <Label Content="Korisničko ime" Margin="15,90,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bahnschrift Light Condensed" FontSize="22"/>
+        <TextBox x:Name="txtLozinka" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="140,150,0,0" TextWrapping="WrapWithOverflow" Text="Lozinka" Width="120" Height="30" Background="#FFFFE777" FontSize="22"/>
+        <Label Content="Lozinka" Margin="50,150,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bahnschrift Light Condensed" FontSize="22"/>
+        <Button x:Name="btnPrijava" Content="Prijavi se" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Bahnschrift Light" Background="#FFFFE777" Foreground="Black" Click="btnPrijava_Click"/>
+    </Grid>
+</Window>
