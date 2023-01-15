@@ -8,7 +8,9 @@
         Title="FunkyBus - Moje Karte" Height="450" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid Background="#FFD6A92C">
         <Label Content="Moje Karte" HorizontalAlignment="Center" Margin="0,19,0,0" VerticalAlignment="Top" FontSize="36" FontFamily="Bahnschrift Light"/>
-        <ComboBox HorizontalAlignment="Center" Margin="0,99,0,0" VerticalAlignment="Top" Width="200" FontFamily="Bahnschrift Light" FontSize="22"/>
-        <Label x:Name="txtKod" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" FontFamily="Bahnschrift Light"/>
+        <ComboBox x:Name="cbxKarte" HorizontalAlignment="Center" Margin="0,99,0,0" VerticalAlignment="Top" Width="200" FontFamily="Bahnschrift Light" FontSize="22" SelectionChanged="cbxKarte_SelectionChanged" Height="32"/>
+        <Label x:Name="txtKod" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" FontSize="18" FontFamily="Bahnschrift Light" Height="53"/>
+        <Label x:Name="txtTermin" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" FontFamily="Bahnschrift Light" Margin="0,307,0,0" Height="53"/>
+        <Label x:Name="txtDatum" Content="" Margin="0,249,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" FontFamily="Bahnschrift Light" Height="53"/>
     </Grid>
 </Window>

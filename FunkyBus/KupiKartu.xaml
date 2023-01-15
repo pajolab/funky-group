@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="FunkyBus - Kupi Kartu" Height="450" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid Background="#FFD6A92C">
-        <ComboBox x:Name="cbxMjestoPolaska" HorizontalAlignment="Left" Margin="160,90,0,0" VerticalAlignment="Top" Width="120" FontFamily="Bahnschrift Light" FontSize="22" Height="32" SelectedIndex="0"/>
-        <ComboBox x:Name="cbxMjestoDolaska" HorizontalAlignment="Left" Margin="160,150,0,0" VerticalAlignment="Top" Width="120" FontFamily="Bahnschrift Light" FontSize="22" Height="32" SelectedIndex="0"/>
-        <ComboBox x:Name="cbxDatumOdlaska" HorizontalAlignment="Left" Margin="160,210,0,0" VerticalAlignment="Top" Width="120" FontFamily="Bahnschrift Light" FontSize="22" Height="32" SelectedIndex="0"/>
-        <ComboBox x:Name="cbxTermin" HorizontalAlignment="Left" Margin="160,270,0,0" VerticalAlignment="Top" Width="120" FontFamily="Bahnschrift Light" FontSize="22" Height="32" SelectedIndex="0"/>
+        <ComboBox x:Name="cbxMjestoPolaska" HorizontalAlignment="Left" Margin="160,90,0,0" VerticalAlignment="Top" Width="120" FontFamily="Bahnschrift Light" FontSize="22" Height="32"/>
+        <ComboBox x:Name="cbxMjestoDolaska" HorizontalAlignment="Left" Margin="160,150,0,0" VerticalAlignment="Top" Width="120" FontFamily="Bahnschrift Light" FontSize="22" Height="32"/>
+        <ComboBox x:Name="cbxDatumOdlaska" HorizontalAlignment="Left" Margin="160,210,0,0" VerticalAlignment="Top" Width="120" FontFamily="Bahnschrift Light" FontSize="22" Height="32"/>
+        <ComboBox x:Name="cbxTermin" HorizontalAlignment="Left" Margin="160,270,0,0" VerticalAlignment="Top" Width="120" FontFamily="Bahnschrift Light" FontSize="22" Height="32"/>
         <Label Content="Mjesto polaska" HorizontalAlignment="Left" Margin="0,90,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Bahnschrift Light"/>
         <Label Content="Mjesto dolaska" HorizontalAlignment="Left" Margin="0,150,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Bahnschrift Light"/>
         <Label Content="Datum odlaska" HorizontalAlignment="Left" Margin="0,210,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Bahnschrift Light"/>

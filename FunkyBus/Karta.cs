@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace FunkyBus
 {
-    class Karta
+    public class Karta
     {
         public string mjestoPolaska;
         public string mjestoDolaska;
         public string datumOdlaska;
         public string Termin;
+        public string Destinacija;
     }
 }

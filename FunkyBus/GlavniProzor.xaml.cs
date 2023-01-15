@@ -28,7 +28,8 @@ namespace FunkyBus
         //Otvori prozor sa kartama korisnika
         private void btnMojeKarte_Click(object sender, RoutedEventArgs e)
         {
-            MojeKarte Prozor_MojeKarte = new MojeKarte();
+            //Otvaramo prozor "Moje Karte" i prenosimo Listu sa svim korisnikovim kartama
+            MojeKarte Prozor_MojeKarte = new MojeKarte(Karte);
             Prozor_MojeKarte.ShowDialog();
             Prozor_MojeKarte.Close();
         }
@@ -38,21 +39,12 @@ namespace FunkyBus
         {
             KupiKartu Prozor_KupiKartu = new KupiKartu();
             Prozor_KupiKartu.ShowDialog();
+            
             Prozor_KupiKartu.Close();
-            Karta NovaKarta = new Karta();
-            try
+            if (Prozor_KupiKartu.KupljenaKarta)
             {
-                NovaKarta.mjestoPolaska = Prozor_KupiKartu.cbxMjestoPolaska.SelectedItem.ToString();
-                NovaKarta.mjestoDolaska = Prozor_KupiKartu.cbxMjestoDolaska.SelectedItem.ToString();
-                NovaKarta.datumOdlaska = Prozor_KupiKartu.cbxDatumOdlaska.SelectedItem.ToString();
-                NovaKarta.Termin = Prozor_KupiKartu.cbxTermin.SelectedItem.ToString();
-            }
-            catch
-            {
-                return;
-            }
-            Prozor_KupiKartu.Close();
-            Karte.Add(NovaKarta);
+                Karte.Add(Prozor_KupiKartu.NovaKarta);
+            } //Provjera da li je korisnik kupio kartu, ako je onda se karta dodaje u listu kupljenih karata
         }
     }
 }
