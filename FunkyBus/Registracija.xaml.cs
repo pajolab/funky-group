@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace FunkyBus
 {
@@ -27,7 +28,16 @@ namespace FunkyBus
 
         private void btnKreiraj_Click(object sender, RoutedEventArgs e)
         {
-
+            if (txtIme.Text.Length < 1)
+            {
+                MessageBox.Show("Korisnički ID nije unesen.");
+                return;
+            }
+            if (txtLozinka.Text.Length < 1)
+            {
+                MessageBox.Show("Lozinka nije unesena.");
+                return;
+            }
         }
     }
 }

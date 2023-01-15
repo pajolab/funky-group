@@ -26,6 +26,11 @@ namespace FunkyBus
 
         private void btnPrijava_Click(object sender, RoutedEventArgs e)
         {
+            if (txtIme.Text.Length < 1 && txtLozinka.Text.Length < 1)
+            {
+                MessageBox.Show("Provjerite unos.");
+                return;
+            }
             GlavniProzor Prozor_Glavni = new GlavniProzor();
             Visibility = Visibility.Hidden;
             Prozor_Glavni.ShowDialog();
