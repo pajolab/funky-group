@@ -19,7 +19,7 @@ namespace FunkyBus.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -57,6 +57,89 @@ namespace FunkyBus.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 17.01.2023
+        ///18.01.2023
+        ///19.01.2023
+        ///20.01.2023
+        ///21.01.2023
+        ///22.01.2023
+        ///23.01.2023
+        ///24.01.2023
+        ///25.01.2023
+        ///26.01.2023
+        ///27.01.2023
+        ///28.01.2023
+        ///29.01.2023
+        ///30.01.2023
+        ///31.01.2023
+        ///01.02.2023
+        ///02.02.2023
+        ///03.02.2023
+        ///04.02.2023.
+        /// </summary>
+        internal static string Datum {
+            get {
+                return ResourceManager.GetString("Datum", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ﻿Split
+        ///Zagreb
+        ///Trogir
+        ///Dubrovnik
+        ///Zadar
+        ///Pula
+        ///Sinj
+        ///Knin
+        ///Varaždin.
+        /// </summary>
+        internal static string Mjesta {
+            get {
+                return ResourceManager.GetString("Mjesta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 06:00
+        ///06:30
+        ///07:00
+        ///07:30
+        ///08:00
+        ///08:30
+        ///09:00
+        ///09:30
+        ///10:00
+        ///10:30
+        ///11:00
+        ///11:30
+        ///12:00
+        ///12:30
+        ///13:00
+        ///13:30
+        ///14:00
+        ///14:30
+        ///15:00
+        ///15:30
+        ///16:00
+        ///16:30
+        ///17:00
+        ///17:30
+        ///18:00
+        ///18:30
+        ///19:00
+        ///19:30
+        ///20:00
+        ///20:30
+        ///21:00.
+        /// </summary>
+        internal static string Termini {
+            get {
+                return ResourceManager.GetString("Termini", resourceCulture);
             }
         }
     }

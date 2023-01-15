@@ -19,6 +19,7 @@ namespace FunkyBus
     /// </summary>
     public partial class GlavniProzor : Window
     {
+        List<Karta> Karte = new List<Karta>();
         public GlavniProzor()
         {
             InitializeComponent();
@@ -38,6 +39,20 @@ namespace FunkyBus
             KupiKartu Prozor_KupiKartu = new KupiKartu();
             Prozor_KupiKartu.ShowDialog();
             Prozor_KupiKartu.Close();
+            Karta NovaKarta = new Karta();
+            try
+            {
+                NovaKarta.mjestoPolaska = Prozor_KupiKartu.cbxMjestoPolaska.SelectedItem.ToString();
+                NovaKarta.mjestoDolaska = Prozor_KupiKartu.cbxMjestoDolaska.SelectedItem.ToString();
+                NovaKarta.datumOdlaska = Prozor_KupiKartu.cbxDatumOdlaska.SelectedItem.ToString();
+                NovaKarta.Termin = Prozor_KupiKartu.cbxTermin.SelectedItem.ToString();
+            }
+            catch
+            {
+                return;
+            }
+            Prozor_KupiKartu.Close();
+            Karte.Add(NovaKarta);
         }
     }
 }
