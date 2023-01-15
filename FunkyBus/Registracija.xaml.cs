@@ -38,6 +38,8 @@ namespace FunkyBus
                 MessageBox.Show("Lozinka nije unesena.");
                 return;
             }
+
+            this.Close();
         }
     }
 }

@@ -31,7 +31,7 @@ namespace FunkyBus
                 MessageBox.Show("Provjerite unos.");
                 return;
             }
-            GlavniProzor Prozor_Glavni = new GlavniProzor();
+            GlavniProzor Prozor_Glavni = new GlavniProzor(txtIme.Text);
             Visibility = Visibility.Hidden;
             Prozor_Glavni.ShowDialog();
         }

@@ -41,8 +41,8 @@ namespace FunkyBus
             foreach (string Mjesto in Mjesta)
             {
                 //Dodavamo mjesta u ComboBoxove za mjesto polaska i mjesto dolaska
-                cbxMjestoPolaska.Items.Add(Mjesto);
-                cbxMjestoDolaska.Items.Add(Mjesto);
+                cbxMjestoPolaska.Items.Add(Mjesto.Replace("\n", "").Replace("\r", ""));
+                cbxMjestoDolaska.Items.Add(Mjesto.Replace("\n", "").Replace("\r", ""));
             }
         }
 
@@ -54,7 +54,7 @@ namespace FunkyBus
             List<string> Datumi = Properties.Resources.Datum.Split('\n').ToList();
             foreach (string Datum in Datumi)
             {
-                cbxDatumOdlaska.Items.Add(Datum); //Dodajemo datum u njegov ComboBox
+                cbxDatumOdlaska.Items.Add(Datum.Replace("\n", "").Replace("\r", "")); //Dodavamo datum u njegov ComboBox
             }
         }
         //Dodavamo termine u ComboBox za termine
@@ -65,7 +65,7 @@ namespace FunkyBus
             List<string> Termini = Properties.Resources.Termini.Split('\n').ToList();
             foreach (string Termin in Termini)
             {
-                cbxTermin.Items.Add(Termin); //Dodavamo termin u njegov ComboBox
+                cbxTermin.Items.Add(Termin.Replace("\n", "").Replace("\r", "")); //Dodavamo termin u njegov ComboBox
             }
         }
         //Kada se stisne dugme Kupi Kartu

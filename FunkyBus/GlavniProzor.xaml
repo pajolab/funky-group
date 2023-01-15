@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FunkyBus"
         mc:Ignorable="d"
-        Title="FunkyBus - Glavni Prozor" Height="450" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="NetBus - Glavni Prozor" Height="450" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Closing="Window_Closing">
     <Grid Background="#FFD6A92C">
         <Label Content="Dobro došao:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="36" FontFamily="Bahnschrift Light"/>
         <Label x:Name="txtKorisnik" Content="Korisnik" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" FontSize="36" FontFamily="Bahnschrift Light"/>
