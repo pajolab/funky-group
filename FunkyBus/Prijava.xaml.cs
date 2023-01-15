@@ -26,7 +26,7 @@ namespace FunkyBus
 
         private void btnPrijava_Click(object sender, RoutedEventArgs e)
         {
-            if (txtIme.Text.Length < 1 && txtLozinka.Text.Length < 1)
+            if (!Karta.Registracija(txtIme.Text, txtLozinka.Text))
             {
                 MessageBox.Show("Provjerite unos.");
                 return;

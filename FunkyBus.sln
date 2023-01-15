@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.33130.400
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunkyBus", "FunkyBus\FunkyBus.csproj", "{6943AE71-FD4A-4F23-A557-1F0A66B707C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunkyBus", "FunkyBus\FunkyBus.csproj", "{AC741DE8-8703-4AD6-BDCC-FC82D1D93B42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunkyBusTests", "FunkyBusTests\FunkyBusTests.csproj", "{A391D6DF-0EE8-457B-BBE1-C8B0C9D7D063}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6943AE71-FD4A-4F23-A557-1F0A66B707C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6943AE71-FD4A-4F23-A557-1F0A66B707C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6943AE71-FD4A-4F23-A557-1F0A66B707C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6943AE71-FD4A-4F23-A557-1F0A66B707C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC741DE8-8703-4AD6-BDCC-FC82D1D93B42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC741DE8-8703-4AD6-BDCC-FC82D1D93B42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC741DE8-8703-4AD6-BDCC-FC82D1D93B42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC741DE8-8703-4AD6-BDCC-FC82D1D93B42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A391D6DF-0EE8-457B-BBE1-C8B0C9D7D063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A391D6DF-0EE8-457B-BBE1-C8B0C9D7D063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A391D6DF-0EE8-457B-BBE1-C8B0C9D7D063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A391D6DF-0EE8-457B-BBE1-C8B0C9D7D063}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
